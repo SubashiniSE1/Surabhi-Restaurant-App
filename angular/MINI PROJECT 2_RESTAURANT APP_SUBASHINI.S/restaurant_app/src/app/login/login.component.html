@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+
+        <div class=" col-6 col-md-6">
+
+            <form id="" class="offset-5 bgc col-10" [formGroup]="loginForm">
+                <h1 class="text-center text-info">LOGIN</h1>
+                <div class="up-field">
+
+                    <div class="">
+                        <label class="form-label">User Name</label>
+                        <input formControlName="userName" placeholder="Enter Name" type="email" class="form-control"
+                            id="exampleInputEmail1" aria-describedby="emailHelp">
+                           
+                    </div>
+                    <br>
+                    <small class="errormsg">
+                        {{getUserNameErrorMsg()}}
+                    </small>
+                   
+
+
+                    <div class="">
+                        <label class="form-label">Password</label>
+                        <input formControlName="password" placeholder="Enter password" type="password"
+                            class="form-control" id="exampleInputPassword1">
+
+                    </div>
+                    <br>
+                    <small class="errormsg">
+                        {{getPasswordErrorMsg()}}
+                    </small> 
+
+
+<!-- 
+                    <button class="mb-2 pb" [disabled]='loginForm.invalid' mat-raised-button type="submit"
+                        (click)="login()" color="warn">Submit</button> -->
+
+                         <button class="cl btn " [disabled]='loginForm.invalid' mat-raised-button type="submit"
+                            (click)="login()" color="success"
+                            >Submit </button>
+                    <br>
+
+                    <a routerLink="/register">New User? click to Register!</a>
+                    <br>
+                    <br>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</div>

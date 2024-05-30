@@ -1,0 +1,259 @@
+{
+  "currentUser": [
+    {
+      "id": 1,
+      "customerId": 8,
+      "name": "Subashini"
+    }
+  ],
+  "register": [
+    {
+      "id": 8,
+      "name": "Subashini",
+      "password": "suba@123!",
+      "mobile": "7824915800",
+      "email": "suba@gmail.com"
+    },
+    {
+      "id": 9,
+      "name": "Admin",
+      "password": "password@123",
+      "mobile": "9898989898",
+      "email": "admin@gmail.com",
+      "type": "Admin"
+    },
+    {
+      "id": 10,
+      "name": "Kowsalya",
+      "password": "Kowsi@123!",
+      "mobile": "87456098542",
+      "email": "kowssalya@gmail.com",
+      "type": "Customer"
+    },
+    {
+      "id": 11,
+      "name": "Raju",
+      "password": "raju@123!",
+      "mobile": "675489654443",
+      "email": "raju@gmail.com",
+      "type": "Customer"
+    },
+    {
+      "id": 12,
+      "name": "subavishnu",
+      "password": "subavishnu",
+      "mobile": "1234567890",
+      "email": "vishnu@suba.com",
+      "type": "Customer"
+    }
+  ],
+  "Menu": [
+    {
+      "id": "1",
+      "name": "Chicken Wings",
+      "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+      "category_name": "Appeteasers",
+      "cuisine_name": "Indian",
+      "price": 250,
+      "consumable": "1:1",
+      "images": "images/chicken wings.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Chicken Livers and Portuguese Roll",
+      "description": "Chicken Livers Topped with PERi-PERi Sauce, Served with A Roll To Soak Up The Sauce",
+      "category_name": "Appeteasers",
+      "cuisine_name": "Indian",
+      "price": 250,
+      "consumable": "1:1",
+      "images": "images/chicken-livers-and-portuguese Roll.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Spicy Mixed Olives",
+      "description": "Co-Starring Garlic, Pepper and Chili",
+      "category_name": "Appeteasers",
+      "cuisine_name": "Indian",
+      "price": 215,
+      "consumable": "1:1",
+      "images": "images/Spicy Mixed Olives.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Hummus with PERI-PERI Drizzle",
+      "description": "Pour Smoky PERi-PERi Oil Over Creamy Hummus and Dig in with Strips Of Warm Pita",
+      "category_name": "Appeteasers",
+      "cuisine_name": "Indian",
+      "price": 215,
+      "consumable": "1:1",
+      "images": "images/hummus-with-PERI-PERI_Drizzle.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Red Pepper Dip",
+      "description": "Dive Into Temping Roasted Red Pepper and Chili Spice Dip with Warm Pita Strips",
+      "category_name": "Appeteasers",
+      "cuisine_name": "Indian",
+      "price": 205,
+      "consumable": "1:1",
+      "images": "images/Red Pepper Dip.jpg"
+    },
+    {
+      "id": "6",
+      "name": "All Together Now",
+      "description": "Spicy Mixed Olives, Red Pepper Dip, Hummus with PERi-PERi Drizzle and Warm Pita Strips",
+      "category_name": "Appeteasers",
+      "cuisine_name": "Indian",
+      "price": 520,
+      "consumable": "1:1",
+      "images": "images/All Together Now.jpg"
+    },
+    {
+      "id": "7",
+      "name": "PERi-PERi Wedges",
+      "description": "Chicken Livers Topped with PERi-PERi Sauce, Served with A Roll To Soak Up The Sauce",
+      "category_name": "Appeteasers",
+      "cuisine_name": "Fast Food",
+      "price": 190,
+      "consumable": "1:1",
+      "images": "images/PERi-PERi Wedges.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Corn-On-The-Cob",
+      "description": "Cons with spicy",
+      "category_name": "Appeteasers",
+      "cuisine_name": "Indian",
+      "price": 330,
+      "consumable": "1:1",
+      "images": "images/Corn-On-The-Cob.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Wing Roulette",
+      "description": "10 Wings in PERi-PERi Flavors",
+      "category_name": "Appeteasers",
+      "cuisine_name": "Indian",
+      "price": 750,
+      "consumable": "1:1",
+      "images": "images/Wing Roulette.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Whole Chicken",
+      "description": "Whole Chicken Marinated in PERi-PERi Sauce and Grilled",
+      "category_name": "Appeteasers",
+      "cuisine_name": "Indian",
+      "price": 1350,
+      "consumable": "1:4",
+      "images": "images/Whole Chicken.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Chicken Butterfly",
+      "description": "Succulent Double Chicken Breast in Crispy Skin",
+      "category_name": "Appeteasers",
+      "cuisine_name": "Indian",
+      "price": 495,
+      "consumable": "1:1",
+      "images": "images/Chicken Butterfly.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Espetada",
+      "description": "Flame-Grilled PERi-PERi Thighs, Stuffed with Feta and Parsley, Skewered with Mixed Peppers",
+      "category_name": "Appeteasers",
+      "cuisine_name": "Indian",
+      "price": 695,
+      "consumable": "1:1",
+      "images": "images/Espetada.jpg"
+    },
+    {
+      "id": "13",
+      "name": "Grilled Chicken Tenders",
+      "description": "Juicy and Tender, Delicious with All Sides",
+      "category_name": "Appeteasers",
+      "cuisine_name": "Indian",
+      "price": 200,
+      "consumable": "1:1",
+      "images": "images/Grilled Chicken Tenders.jpg"
+    },
+    {
+      "id": "AtQpoI1",
+      "name": "Hummus with PERI_PERI Drizzle",
+      "description": "Pour Smoky PERI-PERI oil over Creamy Hummus and Dig in with of warm water",
+      "category_name": "Appeteasers",
+      "cuisine_name": "Indian",
+      "price": 215,
+      "consumable": "1:1",
+      "images": "images\\hummus-with-PERI-PERI_Drizzle.jpg",
+      "quantity": 0
+    }
+  ],
+  "foodOrders": [
+    {
+      "id": 14,
+      "UserId": 8,
+      "orderItems": [
+        {
+          "id": "1",
+          "name": "Chicken Wings",
+          "quantity": 2,
+          "price": 500,
+          "images": "images/chicken wings.jpg",
+          "totalPrice": 250
+        },
+        {
+          "id": "2",
+          "name": "Chicken Livers and Portuguese Roll",
+          "quantity": 2,
+          "price": 500,
+          "images": "images/chicken-livers-and-portuguese Roll.jpg",
+          "totalPrice": 250
+        },
+        {
+          "id": "AtQpoI1",
+          "name": "Hummus with PERI_PERI Drizzle",
+          "quantity": 1,
+          "price": 215,
+          "images": "images\\hummus-with-PERI-PERI_Drizzle.jpg",
+          "totalPrice": 215
+        },
+        {
+          "id": "13",
+          "name": "Grilled Chicken Tenders",
+          "quantity": 1,
+          "price": 200,
+          "images": "images/Grilled Chicken Tenders.jpg",
+          "totalPrice": 200
+        }
+      ],
+      "Total": 1415,
+      "date": "4-2-2022"
+    },
+    {
+      "id": 15,
+      "UserId": 12,
+      "orderItems": [
+        {
+          "id": "AtQpoI1",
+          "name": "Hummus with PERI_PERI Drizzle",
+          "quantity": 1,
+          "price": 215,
+          "images": "images\\hummus-with-PERI-PERI_Drizzle.jpg",
+          "totalPrice": 215
+        },
+        {
+          "id": "6",
+          "name": "All Together Now",
+          "quantity": 1,
+          "price": 520,
+          "images": "images/All Together Now.jpg",
+          "totalPrice": 520
+        }
+      ],
+      "Total": 735,
+      "date": "2022-03-12T03:53:47.542Z"
+    }
+  ]
+}

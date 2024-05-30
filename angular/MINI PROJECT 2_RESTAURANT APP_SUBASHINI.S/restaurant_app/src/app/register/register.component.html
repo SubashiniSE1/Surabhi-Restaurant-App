@@ -1,0 +1,78 @@
+<br>
+<div class="  container-fluid">
+  <div class="row">
+    <div class="col-6 col-md-6">
+      <div class="text-center">
+
+      </div>
+
+      <form id="" class="offset-5 bgc col-12" [formGroup]='registrationForm'>
+        <h1 class="text-center">REGISTER HERE</h1>
+
+        <div class="me">
+          <div class="">
+            <label class="form-label">Name </label>
+            <input formControlName="name" placeholder="Name Should Not be Empty" type="email" class="form-control"
+              id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+
+          <div class="">
+            <label class="form-label">Mobile Number</label>
+            <input class="m-3" formControlName="mobile" placeholder="Enter Mobile Number" type="email"
+              class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+          </div>
+
+
+          <div class="">
+            <label class="form-label">Email ID</label>
+            <input class="m-3" formControlName="email" placeholder="Enter your EmailId" type="email"
+              class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+          </div>
+
+
+
+
+
+          <div class="">
+            <label class="form-label">Password</label>
+            <input class="m-3" formControlName="password" placeholder="Enter Your Password" type="email"
+              class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+          </div>
+
+
+
+          <div class="mb-2">
+            <label class="form-label">Type</label>
+            <input class="m-3" formControlName="type" placeholder="Customer " type="email" class="form-control"
+              id="exampleInputEmail1" aria-describedby="emailHelp">
+
+          </div>
+
+
+
+
+          <br>
+          <table>
+            <tr>
+              <td> <button class="cl m-5 btn " [disabled]='registrationForm.invalid' mat-raised-button type="submit"
+                  (click)="register()" color="success"
+                  style='width:50%;margin: 50% ;position:relative;left:50px;'>Submit </button></td>
+              <td> <a class="m-5 btn-danger btn nd" routerLink="/homePage">cancel</a></td>
+            </tr>
+          </table>
+
+          <ul>
+            <li class="list-inline">
+              <p class="text-success"><a class="nd" routerLink="/login">Already member? click to Login!</a></p>
+            </li>
+
+
+          </ul>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

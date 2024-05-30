@@ -1,0 +1,25 @@
+<br>
+<div class="row">
+    <h1 class="text-center" id="offset-3">
+        Today Bill Record
+    </h1>
+    <br>
+</div>
+<div class="container col-2 col-lg-4 col-md-6  col-sm-12"  *ngFor="let customerOrder of bills">
+    <table class="table">
+        <tr>
+            <th>Order Id</th>
+            <th>CustomerName</th>
+            <th>OrderedDate</th>
+            <th>TotalPrice</th>
+        </tr>
+        <tr>
+           <td> {{customerOrder.id}}</td>
+           <td> {{customerOrder.UserId}}</td>
+           <td> {{customerOrder.date}}</td>
+           <td> {{customerOrder.Total}}</td>
+        </tr>
+    </table>
+
+
+</div>

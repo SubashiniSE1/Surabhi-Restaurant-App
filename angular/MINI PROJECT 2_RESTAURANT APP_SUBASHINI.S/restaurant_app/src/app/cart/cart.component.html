@@ -1,0 +1,47 @@
+<div class="container-fluid">
+
+    <div class="row">
+        <div class=" bgcolor col-2 col-lg-4 col-md-6  col-sm-12" *ngFor="let foodOrders of foodOr">
+            
+            <mat-card class="card cb m-1">
+              
+                 <img src="assets//{{foodOrders.images}}" alt="card image cap" width="250" height="200">
+                      
+                       <mat-card-title>
+                            <br>
+                             <h2 class="text-info">FoodItem Name :{{foodOrders.name}}</h2>
+                             <hr>
+                        </mat-card-title>
+                        <mat-card-content>
+                             <h3  >price : {{foodOrders.price}}</h3>
+                             <h3  >Quantity : {{foodOrders.quantity}}</h3>
+
+                             <h3  >Totalprice : {{foodOrders.totalPrice}}</h3>
+                             
+                            
+                            
+                         </mat-card-content>
+                         <mat-card-actions>
+
+                            <td>
+                                <!-- <button (click)="editItem(Menu)" type="button" class="btn btn-success" data-bs-toggle="modal"
+                                  data-bs-target="#exampleModal" class="btn btn-info">Edit</button>&nbsp;
+                                <button (click)="deleteItem(Menu)" class="btn btn-danger mx-5">Delete</button> -->
+<!--                               
+                                <button (click)="generateTodayBill()" type="button" class="btn btn-info" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        Generate Bill
+      </button> -->
+                              </td>
+                             
+                            <!-- <button  class="m-2" mat-raised-button   color="warn">Order>></button>
+                            <button  class="m-2" mat-raised-button   color="warn">Order>></button> -->
+                        
+                         </mat-card-actions>
+
+            </mat-card> 
+                
+         </div>
+    </div>
+    
+</div>

@@ -1,0 +1,42 @@
+.card{
+    margin: top 15px;
+    border:1px solid blue;
+    width: 550px;
+    padding: 45px;
+    position: absolute;
+    top:5%;
+    left:30%;
+
+}
+
+.text-center{
+    text-shadow: 2px 2px 8px #FF0000;
+}
+.bgc{
+    background-color: rgba(104, 91, 35, 0.774);
+    border-radius: 10%;
+    
+}
+.me{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.nd{
+    text-decoration-line: none;
+    text-decoration: none;
+}
+.cl{
+    /* color: green; */
+    background-color:green ;
+    text-align: center;
+}
+/* .bg{
+
+        height: 650px;
+        color:#fff;
+        background-image: url("../assets/login background.jpg");
+        background-size: 100%;
+        background-size: cover;
+    
+
+} */

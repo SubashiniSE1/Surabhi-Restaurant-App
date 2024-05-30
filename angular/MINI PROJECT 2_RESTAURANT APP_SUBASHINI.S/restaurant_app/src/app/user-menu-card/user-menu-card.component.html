@@ -1,0 +1,155 @@
+<mat-toolbar color="primary">
+
+  <h4>WELCOME CUSTOMER!</h4>
+
+  <div class="container-fluid col-2 col-lg-4 col-md-6  col-sm-12 ">
+   
+    <!-- <button (click)="placeOrder()" type="button" class="btn btn-success">
+      Place your order
+    </button> -->
+    <button (click)="viewBill()" type="button" class="btn btn-success mx-3 ">
+      Your Final bill
+    </button>
+  </div>
+
+</mat-toolbar>
+
+<div class="row">
+
+  <div class=" bgcolor col-2 col-lg-4 col-md-6  col-sm-12" *ngFor="let Menu of foodItems">
+
+    <mat-card class="card cb m-3">
+
+      <img src="assets/{{Menu.images}}" alt="card image cap" width="250" height="200">
+
+      <mat-card-title>
+        <br>
+        <h2 class="text-info">{{Menu.name}}</h2>
+        <hr>
+      </mat-card-title>
+      <mat-card-content>
+        <h3>price : {{Menu.price}}</h3>
+        <h3>Origin : {{Menu.cuisine_name}}</h3>
+        <h3>Catogory : {{Menu.category_name}}</h3>
+
+
+
+      </mat-card-content>
+      <mat-card-actions>
+
+
+
+        <button (click)="orderItems(Menu)" type="button" class="btn btn-success" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">
+          order>>
+        </button>
+      </mat-card-actions>
+
+    </mat-card>
+
+  </div>
+</div>
+
+
+
+<!---------Modals-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Order Form Form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="formValue">
+          <div class="mb-3">
+            <label class="form-label">Food Name</label>
+            <input type="text" formControlName="name" class="form-control" placeholder="Dish Name "
+              id="exampleInputEmail1" aria-describedby="emailHelp">
+
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">price</label>
+            <input type="text" formControlName="price" class="form-control" placeholder="Price of the dish"
+              id="exampleInputEmail1" aria-describedby="emailHelp">
+
+          </div>
+          <div class="mb-3">
+            <label class="form-label">No of Plates</label>
+            <input type="number" formControlName="quantity" class="form-control"
+              placeholder="Enter no of plates you want" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+          </div>
+
+
+
+
+        </form>
+      </div>
+      <div class="modal-footer">
+
+        <!-- <button  type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="continueOrder()">continue Order</button>
+        <button  type="button" class="btn btn-primary" (click)="generateBill(custOrder)">Generate Bill</button>  -->
+
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="cancelOrder()">Cancel</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="addToCart()">Add to Cart</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!---------Modal for generate Bill--------->
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Generate Bill Form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="formValue">
+          <div class="mb-3">
+            <label class="form-label">username</label>
+            <input type="text"   class="form-control" placeholder="Dish Name "
+              id="exampleInputEmail1" aria-describedby="emailHelp">
+
+          </div>
+
+           <table>
+            <tr>
+              <th>Food Name</th>
+              <th>price</th>
+              <th>quantity</th>
+
+              
+            </tr>
+            <tr>
+              <td></td>
+
+              
+            </tr>
+          </table>
+
+          <div class="mb-3">
+            <label class="form-label">totalPrice</label>
+            <input type="text"   class="form-control" placeholder="Dish Name "
+              id="exampleInputEmail1" aria-describedby="emailHelp">
+
+          </div>
+          
+          -->
+
+<!-- </form>
+      </div>
+      <div class="modal-footer">
+         -->
+<!-- <button  type="button" class="btn btn-primary" (click)="continueOrder()">continue Order</button>
+         <button  type="button" class="btn btn-primary" (click)="generateBill()">Generate Bill</button>  -->
+
+<!-- </div>
+    </div>
+  </div>
+</div> -->

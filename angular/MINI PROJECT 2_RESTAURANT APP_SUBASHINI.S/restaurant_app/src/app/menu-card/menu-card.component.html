@@ -1,0 +1,140 @@
+<mat-toolbar class="navbar navbar-light-bg-primay" color="primary">
+  <h2>Menu Items</h2>
+
+  <div class="öffset-3">
+    <button (click)="clickAddResto()" type="button" class="btn btn-success mx-3" data-bs-toggle="modal"
+      data-bs-target="#exampleModal">
+      Add Food Items
+    </button>
+    <!-- <button (click)="generateTodayBill()" type="button" class="btn btn-success mx-3" data-bs-toggle="modal"
+      data-bs-target="#exampleModal">
+      Generate today Bill
+    </button> -->
+    <button routerLink="/generatetodayBillPage" class="btn btn-success mx-3">  Generate today Bill</button>
+    <!-- <button (click)="generateMonthlyBill()" type="button" class="btn btn-success mx-3" data-bs-toggle="modal"
+      data-bs-target="#exampleModal">
+      Generate Monthly Bill
+    </button> -->
+    <button routerLink="/generateMonthlyBillPage" class="btn btn-success mx-3">  Generate Monthly Bill</button>
+
+  </div>
+
+</mat-toolbar>
+<br>
+<br>
+
+<div class="container-fluid">
+
+  <div class="row">
+    <div class=" bgcolor col-2 col-lg-4 col-md-6  col-sm-12 col-xs-12" *ngFor="let Menu of foodItems">
+
+      <mat-card class="card cb m-1">
+
+        <img src="assets/{{Menu.images}}" alt="card image cap" width="350" height="200">
+
+        <mat-card-title>
+          <br>
+          <h2 class="text-info">FoodItem Name :{{Menu.name}}</h2>
+          <hr>
+        </mat-card-title>
+        <mat-card-content>
+          <h3>price : {{Menu.price}}</h3>
+          <h3>Origin : {{Menu.cuisine_name}}</h3>
+          <h3>Catogory : {{Menu.category_name}}</h3>
+
+        </mat-card-content>
+        <mat-card-actions>
+
+          <td>
+            <button (click)="editItem(Menu)" type="button" class="btn btn-success" data-bs-toggle="modal"
+              data-bs-target="#exampleModal" class="btn btn-info">Edit</button>&nbsp;
+            <button (click)="deleteItem(Menu)" class="btn btn-danger mx-5">Delete</button>
+
+          </td>
+
+
+
+        </mat-card-actions>
+
+      </mat-card>
+
+    </div>
+  </div>
+
+</div>
+
+<!-------Modal----->
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Adding Food Items Form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="formValue">
+          <div class="mb-3">
+            <label class="form-label">name</label>
+            <input type="text" formControlName="name" class="form-control" placeholder="FoodItem name here"
+              id="exampleInputEmail1" aria-describedby="emailHelp">
+
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">price</label>
+            <input type="text" formControlName="price" class="form-control" placeholder="Enter foodItem price"
+              id="exampleInputEmail1" aria-describedby="emailHelp">
+
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Category</label>
+            <input type="text" formControlName="category_name" class="form-control" placeholder="Food Category"
+              id="exampleInputEmail1" aria-describedby="emailHelp">
+
+          </div>
+          <div class="mb-3">
+            <label class="form-label">cuisine_name</label>
+            <input type="text" formControlName="cuisine_name" class="form-control" placeholder="enter cuisine_name"
+              id="exampleInputEmail1" aria-describedby="emailHelp">
+
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Description</label>
+            <input type="text" formControlName="description" class="form-control" placeholder="Discription"
+              id="exampleInputEmail1" aria-describedby="emailHelp">
+
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Consumable</label>
+            <input type="text" formControlName="consumable" class="form-control" placeholder="Enter the ratio "
+              id="exampleInputEmail1" aria-describedby="emailHelp">
+
+          </div>
+
+
+
+          <div>
+
+            <label class="form-label">Image</label>
+
+            <input type="text" formControlName="images" class="form-control"
+              placeholder="Add the Image in assets and Enter image path here" id="exampleInputEmail1"
+              aria-describedby="emailHelp" >
+
+          </div>
+
+
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-bs-dismiss="modal" id="clear" data-bs-dismiss="modal" class="btn btn-secondary">Clear</button>
+        <button *ngIf="showAdd" type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="addMenu()">Add
+          FoodItem</button>
+        <button *ngIf="showbth" type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="updateMenu()">Update</button>
+      </div>
+
+    </div>
+  </div>
+</div>
