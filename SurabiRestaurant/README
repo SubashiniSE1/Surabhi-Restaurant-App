@@ -1,0 +1,18 @@
+SURABHI RESTAURANT PROJECT EXPLANATION :
+
+1.)  I have create a database file.
+2.)  There is a registration page for new users.
+3.)  There is two login pages one for Admin and One for User (Admin UserName is "Admin" and 
+                                                               Password is"Admin@123!")
+4.)While Entering onto Admin Page they can edit the User and edit the menu Items as their Wish 
+5.)When user logging in they can see the menu Items and Can able to order n nymber of Items 
+6.) User can see their cart and final bill 
+7.)Admin can see the total monthly bill and per day bill.
+8.)This application is responsiveness.
+9.)It has a Swagger Documentation.
+
+CODE EXPLANATION:
+
+1.)The project is splitted into controllers ,DAO and Service.
+2.)Angular UI is created and integrated with Spring boot.
+3.)Server port is 8081.
